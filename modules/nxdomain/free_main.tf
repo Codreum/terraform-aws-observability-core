@@ -258,9 +258,9 @@ resource "aws_cloudwatch_metric_alarm" "zone_nxdomain_rate_alarm" {
   ok_actions    = [var.dns_alert_sns_arn]
 
   depends_on = [
-  aws_cloudwatch_log_metric_filter.zone_nxdomain_count[0],
-  aws_cloudwatch_log_metric_filter.zone_total_count[0]
-]
+    aws_cloudwatch_log_metric_filter.zone_nxdomain_count[0],
+    aws_cloudwatch_log_metric_filter.zone_total_count[0]
+  ]
 
   tags = merge({
     "codreum:type"    = local.product_code,
@@ -485,9 +485,9 @@ resource "aws_cloudwatch_metric_alarm" "vpc_nxdomain_rate_alarm" {
   ok_actions    = [var.dns_alert_sns_arn]
 
   depends_on = [
-  aws_cloudwatch_log_metric_filter.vpc_nxdomain_count[0],
-  aws_cloudwatch_log_metric_filter.vpc_total_count[0]
-]
+    aws_cloudwatch_log_metric_filter.vpc_nxdomain_count[0],
+    aws_cloudwatch_log_metric_filter.vpc_total_count[0]
+  ]
 
   tags = merge({
     "codreum:type"    = local.product_code,
