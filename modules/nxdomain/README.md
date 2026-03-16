@@ -300,7 +300,7 @@ You will get an Ops landing page plus dashboards for the modes you enabled:
 
 ![Dashboards](../../screenshot/dashboard2.jpg)
 
-#### How to use
+#### How to use dashboard
 
 - If alarms fire, start at **Ops landing**, then jump into the Zone or VPC
   dashboard.
@@ -344,7 +344,7 @@ Contributor Insights rules are used for fast Top-N analysis:
 
 ![Contributor Insights](../../screenshot/CI2.jpg)
 
-#### How to use
+#### How to use CI
 
 - Open **CloudWatch → Contributor Insights**
 - Filter by your `prefix`

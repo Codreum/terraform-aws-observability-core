@@ -235,12 +235,14 @@ For module-specific usage and inputs, see:
 Yes — both modules can be used in the same Terraform root configuration.
 
 Typical combined flow:
+
 - AutoVPC creates the VPC
 - AutoVPC optionally enables Resolver query logging for that VPC
 - NXDOMAIN consumes the existing CloudWatch Logs log group by name
 - NXDOMAIN monitors the VPC by using the VPC ID produced by AutoVPC
 
 Important note:
+
 - AutoVPC does not create the CloudWatch Logs log group for DNS logs
 - NXDOMAIN also does not create that log group in the free module
 - if you enable Resolver query logging, you must manually supply an existing CloudWatch Logs log group ARN to AutoVPC
