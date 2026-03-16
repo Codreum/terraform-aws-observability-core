@@ -523,6 +523,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_NX_enable_vpc"></a> [NX\_enable\_vpc](#input\_NX\_enable\_vpc) | Enable VPC-scoped NXDOMAIN resources. | `bool` | `false` | no |
+| <a name="input_NX_enable_zone"></a> [NX\_enable\_zone](#input\_NX\_enable\_zone) | Enable hosted-zone-scoped NXDOMAIN resources. | `bool` | `false` | no |
 | <a name="input_NX_log_group_name"></a> [NX\_log\_group\_name](#input\_NX\_log\_group\_name) | CloudWatch Logs group for Route 53 Resolver query logs. | `string` | n/a | yes |
 | <a name="input_NX_vpc_anomaly_band_width"></a> [NX\_vpc\_anomaly\_band\_width](#input\_NX\_vpc\_anomaly\_band\_width) | Std-dev width for anomaly band on VPC metrics. | `number` | `null` | no |
 | <a name="input_NX_vpc_anomaly_eval_periods"></a> [NX\_vpc\_anomaly\_eval\_periods](#input\_NX\_vpc\_anomaly\_eval\_periods) | Evaluation periods for VPC anomaly alarms. | `number` | `null` | no |

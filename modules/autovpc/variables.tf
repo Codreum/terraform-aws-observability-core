@@ -84,10 +84,11 @@ variable "resolver_query_log_destination_arn" {
 
   validation {
     condition = (
-      var.enable_resolver_query_logging == false ||
+      var.enable_resolver_query_logging == false ?
+      true :
       (
         var.resolver_query_log_destination_arn != null &&
-        trim(var.resolver_query_log_destination_arn) != ""
+        trimspace(var.resolver_query_log_destination_arn) != ""
       )
     )
     error_message = "resolver_query_log_destination_arn must be set when enable_resolver_query_logging is true."
