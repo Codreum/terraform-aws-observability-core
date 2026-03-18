@@ -54,7 +54,7 @@
 # Codreum Terraform AWS Modules
 
 This repository contains Codreum Terraform modules for AWS NXDOMAIN Observability and
-Lightweight VPC provisioning module, AutoVPC (Core)
+lightweight VPC provisioning module, AutoVPC (Core)
 
 ## Available modules
 
