@@ -46,8 +46,8 @@
 <p align="center">
   <a href="https://www.codreum.com">Website</a> •
   <a href="https://www.codreum.com/products.html#zone">Products</a> •
-  <a href="#available-modules">Modules</a>
-  <a href="#Module's-Tier-comparison">Tier</a>
+  <a href="#available-modules">Modules</a> •
+  <a href="#Module's-Tier-comparison">Tier</a> •
   <a href="#Core-vs-Pro">Pro</a>
 </p>
 
